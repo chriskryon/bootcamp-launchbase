@@ -14,39 +14,39 @@ if (new Date()) , if (-42) , if (3.14)
 if (-3.14), if (Infinity), if (-Infinity)
 */
 
-const alunos = [
+const students = [
     {
-        nome: 'Fulano',
-        nota: 5,
+        name: 'Fulano',
+        note: 5,
     },
     {
-        nome: 'Beltrano',
-        nota: 9.5,
+        name: 'Beltrano',
+        note: 9.5,
     },
     {
-        nome: 'Ciclano',
-        nota: 10,
+        name: 'Ciclano',
+        note: 10,
     }
 ];
 
-const marcaComoReprovado = aluno => {
-    aluno.reprovado = false
+const marksAsDisapproved = student => {
+    student.disapproved = false;
 
-    if (aluno.nota <= 5) aluno.reprovado = true;
+    if (student.note <= 5) student.disapproved = true;
 }
 
-const enviaMensagemReprovado = aluno => {
-    if(aluno.reprovado) {
-        console.log(`O aluno ${aluno.nome} está reprovado!`);
+const sendMessageDisapproved = student => {
+    if(student.disapproved) {
+        console.log(`The student ${student.name} is disapproved!`);
     }
 }
 
-const alunosReprovados = alunos => {
-    for (aluno of alunos) {
-        marcaComoReprovado(aluno);
-        enviaMensagemReprovado(aluno);
+const studentsDisapproveds = students => {
+    for (student of students) {
+        marksAsDisapproved(student);
+        sendMessageDisapproved(student);
     }
 }
 
-alunosReprovados(alunos);
-console.table(alunos);
+studentsDisapproveds(students);
+console.table(students);
