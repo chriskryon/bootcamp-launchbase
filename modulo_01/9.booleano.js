@@ -31,6 +31,7 @@ const alunos = [
 
 const marcaComoReprovado = aluno => {
     aluno.reprovado = false
+
     if (aluno.nota <= 5) aluno.reprovado = true;
 }
 
@@ -40,13 +41,12 @@ const enviaMensagemReprovado = aluno => {
     }
 }
 
-const alunoReprovado = alunos => {
+const alunosReprovados = alunos => {
     for (aluno of alunos) {
         marcaComoReprovado(aluno);
         enviaMensagemReprovado(aluno);
     }
 }
 
-alunoReprovado(alunos);
+alunosReprovados(alunos);
 console.table(alunos);
-
