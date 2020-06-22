@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap');
+:root {
+    --color-green: #4ecca3;
+}
+
+body {
+    background-color: #232931;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+header {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--color-green);
+    transition: color 700ms;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#wrapper img {
+    border-radius: 20px;
+    border: 2px solid var(--color-green);
+    height: 100px;
+}
+
+#wrapper h1,
+h2,
+ul {
+    color: white;
+}
+
+#wrapper h2 {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#wrapper ul {
+    list-style-type: none;
+}
+
+.bottom-div {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--color-green);
+}
+
+#links-footer a {
+    border-bottom: 1px solid var(--color-green);
+}
+
+#links-footer a:hover {
+    border-bottom: 1px solid white;
+    letter-spacing: 1pt;
+    text-shadow: 1px 1px 2px black;
+    transition: all 800ms ease-in;
+}
