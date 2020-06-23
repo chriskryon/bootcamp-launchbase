@@ -127,6 +127,54 @@ ul {
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal.action {
+    width: 90%;
+    height: 90%;
+}
+
+.modal .modal-navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 90% 1fr 1fr;
+    position: relative;
+}
+
+.modal .title {
+    color: var(--color-green);
+    font-weight: bold;
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.modal .close-modal,
+.action-modal {
+    color: var(--color-green);
+    margin: auto;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 
