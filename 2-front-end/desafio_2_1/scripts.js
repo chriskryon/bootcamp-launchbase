@@ -19,3 +19,8 @@ document.querySelector('.action-modal').addEventListener('click', function() {
         modal.classList.add('action');
     }
 });
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+    modalOverlay.classList.remove('active');
+    modalOverlay.querySelector("iframe").src = "";
+});
